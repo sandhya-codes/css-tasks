@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        .outerbox{
+            width:400px;
+            height:300px;
+            border:5px solid rebeccapurple;
+            position: relative;
+
+        }
+        .innerbox{
+            width:200px;
+            height:100px;
+            border:5px solid rebeccapurple;
+            position: absolute;
+            right :90px;
+            bottom: 90px;
+        }
+        .card{
+            width:300px;
+            height:300px;
+            border:5px solid rebeccapurple;
+            position:relative;
+            margin-top: 10px;
+            
+        }
+        .icon{
+            width:100px;
+            height:100px;
+            border:5px solid rgb(50, 183, 32);
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            }
+        .tooltip-continer{
+            width:300px;
+            height:300px;
+            border:5px solid rebeccapurple;
+            position:relative;
+            margin-top: 10px;
+            
+            }
+            .tooltip{
+            width:100px;
+            height:100px;
+            border:5px solid rebeccapurple;
+            position:absolute;
+            right:20px;
+            top:40px;
+
+            }
+            .button{
+            width: 50px;
+            height: 30px;
+            right:50px;
+            top: 10px;
+            position: absolute;
+          }
+         .avatar-container{
+           width: 300px;
+           height: 300px;
+           border: 5px solid gold;
+           position: relative;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            right: 40px;
+            bottom: 40px;
+
+        }
+        .badge{
+           width: 100px;
+           height: 100px;
+           border: groove red 6px;
+           position: absolute;
+           right: 40px;
+           top:60px;
+        }
+        .img-container{
+            width: 250px;
+            height: 300px;
+            border:rgb(251, 182, 132) 5px solid;
+            position: relative;
+            right: 0px;
+        }
+        .img{
+            width: 200px;
+            height: 200px;
+            position:absolute;
+            right: 10px;
+            top:40px
+
+
+        }
+        .overlay{
+          width: 200px;
+          height: 200px;
+          border: saddlebrown solid 5px;
+          position:absolute;
+          right: 10px;
+          top: 40px;
+          
+        }
+        
+     </style>
+</head>
+<body>
+    <h1>task1</h1>
+    <div class="outerbox">
+        <div class="innerbox"></div>
+    </div>
+    <h1>task2</h1>
+    <div class="card">
+        <div class="icon">
+            </div>
+    </div>
+    <h1>task3</h1>
+    <div class="tooltip-continer">
+        <button class="button">hover me</button>
+        <div class="tooltip">tooltip</div>
+    </div>
+    <h1>task4</h1>
+    <div class="avatar-container">
+        <img src="../chess.avif" alt="restarent " class="">
+        <div class="badge">1</div>
+    </div>
+    <h1>task5</h1>
+    <div class="img-container">
+        <img src="../website/web5.jpg" class="img">
+        <div class="overlay" style=" text-align: center; color: wheat;">overlay text</div>
+    </div>
+</body>
+</html>
