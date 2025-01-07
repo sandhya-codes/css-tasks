@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    *{
+        margin:0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+     .container{
+        width:100%;
+        background-color:rgb(52, 3, 72); 
+        height:800px; 
+    }
+    
+    .box{
+        width: 600px;
+        height: 600px;
+        background-color:rgb(67, 4, 92);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%,-50%);
+        /* display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap:wrap; */
+    }
+    .sub{
+        height: 50px;
+        width: 400px;
+        font-size:15px;
+        position: relative;
+        top: 20%;
+        left: 50%;
+        transform:translate(-50%,-50%);
+        display: flex; 
+    }
+    h1{
+        color: aliceblue;
+        text-align: center;
+        position: relative;
+        top:60px;
+    }
+    .create{
+         background-color:skyblue;
+    }
+    .p1{
+        color: aliceblue;
+        text-align: center;
+        position: relative;
+        top: 50px;
+    }
+    .p2{
+         position: relative;
+         left: 250px;
+         top:55px;
+         color:white;
+         font-size: 25px;
+        
+    }
+     #p3{
+        color: aliceblue;
+        text-align:center;
+        position: absolute; 
+          bottom: 110px;
+          left: 150px;
+        
+    }
+    
+   </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Mastery Games</h1>
+            <br>
+            <p class="p1">Create your account</p>
+            <input type="text" name="fname" placeholder="Firstname" class="sub fname" required autocomplete="off" pattern="[a-zA-Z]" maxlength="16" minlength="8">
+            <br>
+            <input name="mail" type="email" placeholder="email" class="sub mail" pattern="[a-zA-Z0-9]+@gmail.com" maxlength="16" minlength="8">
+            <br>
+            <input name="password" type="password" class="sub password" placeholder="password" maxlength="16" minlength="8" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]){8,16}">
+            <br>
+            <input type="text" class="sub create">
+            <p class="p2">create account</p>
+            <p id="p3">Already have a Mastery Games account?<a href="">sign in</a></p>
+        </div>
+    </div>
+</body>
+</html>
