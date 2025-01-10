@@ -1,0 +1,93 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .container{
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+         }
+         .sub{
+            width:300px;
+            height:300px;
+            position: relative;
+            /* border: red solid 4px; */
+            transition: 0.4 ease;
+         }
+           .sub>img{
+            width:300px;
+            height:300px;
+            object-fit: cover;
+            transition: 0.4 ease;
+           }
+         .sub1 p,.sub2 p,.sub3 p,.sub4 p,.sub5 p,.sub6 p,.sub7 p,.sub8 p{
+            position: absolute;  
+            color:white;
+            font-size:50px;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%,-50%);  
+            opacity:0;  
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            }
+            .sub1:hover p,.sub2:hover p,.sub3:hover p,.sub4:hover p,.sub5:hover p,.sub6:hover p,.sub7:hover p,.sub8:hover p{
+                font-size: 50px;
+                opacity:1;
+                background-color:black;
+                height: 300px;
+                width: 300px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                margin-top: 0px;   
+            }
+              sub1:hover{
+                background-color: black;
+              }   
+    </style>
+ </head>
+ <body>
+    <div class="container">
+            <div class="sub sub1">
+                <img src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_2x1.jpg" width="500px" height="300px" alt="">
+                <p>CAT</p> 
+            </div>
+            <div class="sub sub2">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" width="500px" height="300px" alt="">
+             <p>DOG</p> 
+            </div>
+            <div class="sub sub3">
+                <img src="https://i.natgeofe.com/k/78b20329-9758-42c3-baa4-10c613dd2820/baby-african-elephant.jpg?wp=1&w=1084.125&h=609" width="500px" height="300px" alt="">
+           <p>ELEPHANT</p>
+            </div>
+            <div class="sub sub4">
+                <img src="https://media.istockphoto.com/id/1341341634/photo/cute-baby-chimpanzee-portrait.jpg?s=612x612&w=0&k=20&c=UK7b8hsMQL30ma_6XEL7MN6khgUyDXKRxTpkY_JaSek= " width="500px" height="300px" alt="">
+             <p>monkey</p>
+            </div>
+            <div class="sub sub5">
+                <img src="https://i.natgeofe.com/k/771ecd45-98e6-463e-9bc7-babd821853d3/red-panda-cub.jpg?wp=1&w=1084.125&h=1044.75"width="500px" height="300px" alt="">
+            <p>RACOON</p>
+            </div>
+            <div class="sub sub6">
+                <img src="https://video.cgtn.com/news/7959544e79557a4e31516a4d32417a4d796b7a4e31457a6333566d54/video/e78e572f4533430b9d05a70573ed578f/e78e572f4533430b9d05a70573ed578f.jpg" width="500px" height="300px" alt="">
+            <p>PANDA</p>
+            </div>
+            <div class="sub sub7">
+                <img src="https://cdn.britannica.com/30/150930-120-D3D93F1E/lion-Namibia.jpg" width="500px" height="300px" alt="">
+           <p>LION</p>
+            </div>
+            <div class="sub sub8">
+                <img src="https://www.reuters.com/resizer/v2/https%3A%2F%2Fcloudfront-us-east-2.images.arcpublishing.com%2Freuters%2F476OCGIFUJKVRAAKQ5EPGGY5JM.jpg?auth=f7d54ca19d0d8bc4076cc20c9b779923d70148bcf40411ddcc4780406818e46f&height=1500&width=1200&quality=80&smart=true" width="500px" height="300px" alt="">
+            <p>TIGER</p>
+            </div>
+        </div> 
+ </body>
+ </html>
