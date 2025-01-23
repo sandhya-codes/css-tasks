@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+         /* .h1{
+            padding-top:20px;
+        } */
+        .box{
+            width: 300px;
+            height: 200px;
+            padding: 20px;
+            margin: 10px;
+            border: 2px solid blue;
+        }
+        .container1 .box{
+           width: 150px;
+           height: 100px;
+           border: 5pz solid black;
+        }
+
+        .text-container { 
+            width: 50%;
+            padding: 1rem;
+            /* background-color: blueviolet; */
+        }
+        .text-container text{
+            font-size: 2em;
+        }
+        .header1{
+            height: 50vh;
+            padding: 5vw;
+            background-color: brown;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header2{
+            width: 100%;
+            height: 60px;
+            background-color: rgb(251, 217, 251);
+            position: fixed;
+            top: 0px;
+            text-align: center;
+            opacity: 0.9;
+            padding: 10px;
+        }
+        .container2{
+            width: 400px;
+            height: 400px;
+            position: relative;
+            border:5px solid black;
+        }
+        .container2 .relative-box{
+            position: relative;
+            top:20px;
+            left:20px;
+            border: 2px solid darkmagenta;
+            margin-right: 20px;
+        }
+        .container2 .absolute-box{
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            border: 2px solid darkred;
+        }
+        .flex-container1{
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid springgreen;
+        }
+        .flex-container .box{
+            width: 100px;
+            height: 100px;
+        }
+        .flex-container2{
+            display: flex;
+            width: 100%;
+            height: 200px;
+            justify-content: space-evenly;
+        }
+        .flex-container2 .item{
+            display: flex;
+            border: 2px solid black;
+            
+        }
+        .flex-container3 {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+        }
+        .flex-container3 .box1{
+           height: 80px;
+           background-color: chartreuse;
+           text-align: center;
+        }
+        .flex-container3 .box2{
+            height: 80px;
+            background-color: lightcoral;
+            
+        }
+        .flex-container3 .box3{
+            height: 80px;
+            background-color: lightseagreen;
+        }
+        .flex-container4{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .flex-container4 .item{
+          width: 150px;
+          height: 100px;
+        }
+        .responsive-container{
+            background-color: blueviolet;
+        }
+        .image-container{
+            width:500px;
+            height:500px;
+            border: 3px solid black;
+        }
+        .image-container img{
+              max-width:500px;
+              width:100%;
+              height:300px;
+              object-fit: cover;
+             
+        }
+        .menu {
+            width:100%;
+            display:flex;
+            /* padding-left:20px; */
+        }
+        .menu ul{
+            /* border: 2px solid black; */
+            /* padding:10px; */
+            width:100%;
+            height:100px;
+            list-style: none; 
+            display:flex;
+            justify-content: space-around;
+            text-align: center;
+            /* flex-wrap: wrap; */
+        }
+        .menu .li1{
+             padding:10px;
+            width:100%;
+            height:50px;
+        }
+        .menu .li2{
+             padding:10px;
+            width:100%;
+            height:50px;
+        }
+        .menu .li3{
+            /* border: 2px solid black; */
+            padding:10px;
+            width:100%;
+            height:50px;
+        }
+         
+        .menu :first-child :hover{
+            background-color:#757575;
+        }
+        
+        .card-container {
+            width:100%;
+            height:200px;
+             display:block;        
+        }
+        .card-container .card1 ,.card-container .card2 ,.card-container .card3{
+            width:100%;
+            height:50px;
+            text-align: center;
+            border: 1px solid black;
+            background-color:lightcoral;
+            box-shadow: 10px 5px 5px 5px #757575;
+        }
+       .hero-section{
+            width:500px;
+            height:500px;
+            background-image: url(https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*);
+            background-size: cover;
+            text-align: center;
+        }
+        @media screen and (max-width : 600px) {
+            .responsive-container .text{
+                font-size: 16px;
+             }
+             .hero-section p ,.hero-section h1{
+                font-size:16px;
+             }
+        }
+        @media screen and (min-width :600px) and (max-width : 1200px){
+            .responsive-container .text{
+                font-size:20px;
+             } 
+        }
+        @media screen and (min-width : 1200px) {
+            .responsive-container .text{
+                font-size:24px;
+             } 
+        }
+        @media screen and (min-width : 768px) {
+            .image-container {
+                display: flex;
+                align-items: center;
+            }   
+        }
+        @media screen  and (min-width : 1024px){
+            .card-container {
+                display:flex;
+            }
+        }
+        @media screen and (max-width : 800px) {
+            .menu ul {
+             
+                display: block;
+                width:90%;   
+            }
+        }
+         @media screen and (min-width : 600px) and (max-width : 1200px) {
+            .hero-section h1 ,.hero-section p{
+                font-size:24px;
+            }
+         }
+         @media screen and (min-width : 1200px) {
+            .hero-section h1 , .hero-section p{
+                font-size: 32px;
+            }
+         }
+    </style>
+</head>
+<body>
+   
+    <h1 class="h1">Q-1</h1>
+    <div class="box">
+        Content inside the box
+      </div>
+     
+      <h1>Q-2</h1>
+      <div class="container1">
+        <div class="box box-1">Box 1</div>
+        <div class="box box-2">Box 2</div>
+      </div>
+      <h1>Q-3</h1>
+      <div class="text-container">
+        <p class="text">This is some text.</p>
+      </div>
+      <h1>Q-4</h1>
+      <div class="header1">
+        <h1>Welcome to My Website</h1>
+      </div>
+      <h1>Q-5</h1>
+      <div class="header2">Fixed Header</div>
+     <div class="content">
+       <p>Some long content goes here...</p>
+        </div>
+     <h1>Q-6</h1>
+     <div class="container2">
+        <div class="relative-box">Relative Box</div>
+        <div class="absolute-box">Absolute Box</div>
+      </div>
+      <h1>Q-7</h1>
+      <div class="flex-container1">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+      </div>
+      <h1>Q-8</h1>
+      <div class="flex-container2">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+      </div>
+      <h1>Q-9</h1>
+      <div class="flex-container3">
+        <div class="box1">Box 1</div>
+        <div class="box2">Box 2</div>
+        <div class="box3">Box 3</div>
+      </div>
+      <h1>Q-10</h1>
+      <div class="flex-container4">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+      </div>
+      <h1>Q-11</h1>
+      <div class="responsive-container">
+        <p class="text">This text should adjust based on the screen size.</p>
+      </div>
+      <h1>Q-12</h1>
+      <div class="image-container">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" alt="Sample Image" />
+      </div>   
+      <h1>Q-13</h1>
+      <div class="menu">
+        <ul>
+          <li class="li1">Home</li>
+          <li class="li2">About</li>
+          <li class="li3">Contact</li>
+        </ul>
+      </div> 
+      <h1>Q-14</h1>
+      <div class="card-container">
+        <div class="card1">Card 1</div>
+        <div class="card2">Card 2</div>
+        <div class="card3">Card 3</div>
+      </div>
+      <h1>Q-15</h1>
+      <div class="hero-section">
+        <h1>Welcome</h1>
+        <p>Explore our website for amazing content.</p>
+      </div>
+      
+</body>
+</html>
