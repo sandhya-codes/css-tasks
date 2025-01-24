@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .grid-container{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items:center;
+         }
+        .container{
+         padding: 50px;
+         width:650px;
+         height:100%;
+         gap: 10px;
+         background-color:#2b2e56;
+         display: grid;
+         grid-template-columns: 100px 130px 130px 130px ;
+         grid-template-rows:70px 90px 100px;
+         }
+        .item{
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;    
+         }
+       .item1{
+         background-color:#6dbe4f;
+         grid-row:1/4;
+       }
+       .item2{
+         background-color:#6dbe4f;
+         grid-column: 2/4;
+       }
+       .item3{
+         background-color:#ec3437;
+       }
+       .item4{
+         background-color:#fbb22f;
+         grid-row: 2/3;
+       }
+       .item5{
+         background-color:#ec3437;
+         grid-row: 2/3;
+       }
+       .item6{
+         background-color:#6dbe4f;
+          grid-row:2/4;
+       }
+       .item7{
+         background-color:#ec3437;
+       }
+       .item8{
+         background-color:#fbb22f;
+       }
+       @media screen and (max-width : 500px) {
+        .container{
+          width: 100%;
+          height: 100%;
+          grid-template-columns:repeat(1,1fr);
+        }
+        .item{
+          grid-row: auto;
+          grid-column: auto;
+        }
+       }
+       @media screen and (min-width : 501px) and (max-width : 900px) {
+        .container{
+          width: 100%;
+          grid-template-columns: repeat(2,3fr);
+        }
+        .item{
+          grid-column: auto;
+          grid-row: auto;
+        }
+        .item7{
+          display: none;
+        }
+        .item8{
+          display: none;
+        }
+       }
+    </style>
+</head>
+<body>
+    
+    <div class="grid-container">
+        <div class="container"> 
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div>
+        <div class="item item4">item4</div>
+        <div class="item item5">item5</div>
+        <div class="item item6">item6</div>
+        <div class="item item7">item7</div>
+        <div class="item item8">item8</div> 
+    </div>
+</div>
+</body>
+</html>
