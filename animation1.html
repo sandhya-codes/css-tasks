@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container1{
+            width: 100%;
+            height:100vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width:500px;
+            height:400px;
+            background-color: aliceblue;
+            display: flex;
+            align-items: end;
+            justify-content: space-around;
+            gap: 10px;
+            text-align: center;
+        }
+         .box .item{
+            border-radius:10px ;
+            width:70px;
+            height:10px; 
+            /* animation:width-increase 3s infinite ; */
+            /* background:linear-gradient(rgb(39, 39, 202),rgb(212, 104, 122)); */
+        }
+        .box .item1{
+            height: 300px;
+            animation: height-increase1 1s ease infinite;
+
+        }
+        .box .item2{
+             
+            animation: height-increase2 1s  infinite;
+             
+        }
+        .box .item3{
+            height: 50px;
+            animation: height-increase3 1s ease infinite;
+        }
+        .box .item4{
+            height: 400px;
+            animation:height-increase4 1s ease-out infinite;
+        }
+        .box .item5{
+            height: 400px;
+            animation:height-increase5 1s ease-out infinite;
+        }
+        @keyframes height-increase1  {
+            from{
+                 
+                background-color: lightblue;
+                
+            }
+            to{
+                background-color: lightpink;
+                height:100px;
+            }
+        }
+        @keyframes height-increase2  {
+            from{
+                height:390px;
+                background-color: lightblue;
+                
+            }
+            to{
+                background-color: lightpink;
+                height:300px;
+            }
+        }
+        @keyframes height-increase3  {
+            from{
+                background-color: lightblue;
+            }
+            to{
+                background-color: lightcoral;
+                height: 150px;
+            }
+        }
+        @keyframes  height-increase4 {
+            from{
+                background-color: lightblue;
+            }
+            to {
+                background-color: lightcoral;
+                height: 180px;
+            }
+            
+        }
+        @keyframes  height-increase5 {
+            from{
+                background-color: lightblue;
+            }
+            to {
+                background-color: lightcoral;
+                height:30px;
+            }
+            
+        }
+        
+
+
+
+
+
+        .container2{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .container2 .item{
+         width: 10px;
+         height: 10px;
+         background-color: beige;
+         border-radius: 50%;
+         animation-name: wave;
+         animation-duration: 2s;
+         /* animation-timing-function: ease; */
+         animation-iteration-count: infinite;
+        }
+         
+       .container2 div:nth-child(1){
+        background-color:skyblue;
+        animation-delay:1s;
+       }
+       .container2 div:nth-child(2){
+        background-color:red;
+        animation-delay: 1.2s;
+       }
+       .container2 div:nth-child(3){
+        background-color:yellow;
+        animation-delay:1s;
+       }
+       .container2 div:nth-child(4){
+        background-color:green;
+        animation-delay:1.2s;
+       }  
+       @keyframes wave {
+        0%{
+            transform: translateY(3px);
+        }
+        25%{
+            transform: translate(-5px);
+        }
+        100%{
+            transform: translate(1px);
+        }
+       }
+    </style>
+</head>
+<body>
+    <div class="container2">
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+        <div class="item item4"></div>
+    </div>
+               
+
+    <div class="container1">
+        <div class="box">
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+        <div class="item item4"></div>
+        <div class="item item5"></div>
+        </div>
+    </div>
+        
+</body>
+</html>
